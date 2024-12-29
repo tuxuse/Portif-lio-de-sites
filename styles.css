@@ -142,8 +142,6 @@ header {
     letter-spacing: 0.5px; /* Ajuste o espaçamento entre as letras, se necessário */
 }
 
-
-
 #container-foto{
     flex: 1;
     max-width: 8%; /* Ajuste o max-width conforme necessário */
@@ -152,8 +150,6 @@ header {
     justify-content: center; /* Para centralizar a imagem dentro do container */
     align-items: center; /* Para centralizar verticalmente */
 }
-
-
 
 #container-foto img {
     width: 400px; /* Largura da imagem */
@@ -174,12 +170,14 @@ header {
 
 #titulo-parceiros h2 {
     margin: 0;                    /* Remove margens padrão do h2 */
-    font-size: 24px;              /* Ajuste do tamanho da fonte */
+    font-size: 24px;              /* Ajuste do tamanho
+    da fonte */
+    color: black;
     font-weight: bold;            /* Estilo negrito */
 }
 
 #parceiros-container {
-    background-color: #0F1D6C;
+    background-color: #fff;
     display: flex;               /* Ativa o Flexbox */
     flex-wrap: wrap;              /* Permite que os itens se movam para a linha seguinte se necessário */
     justify-content: center;     /* Centraliza os parceiros horizontalmente */
@@ -188,6 +186,7 @@ header {
     padding: 5%;                  /* Adiciona preenchimento ao redor do container */
     box-sizing: border-box;      /* Garante que o padding não afete o tamanho do container */
     padding-bottom: 0%;
+    
 }
 
 .parceiro {
@@ -197,6 +196,7 @@ header {
     padding: 10px;               /* Ajusta o espaçamento entre os logotipos */
     flex: 0 1 200px;             /* Faz com que cada parceiro tenha no mínimo 200px e seja flexível */
     box-sizing: border-box;      /* Garantia de que o padding não afete as dimensões dos itens */
+  
 }
 
 .parceiro img {
@@ -204,13 +204,15 @@ header {
     max-width: 200px;            /* Limita a largura máxima da imagem */
     height: auto;                /* Mantém a proporção da altura */
     object-fit: contain;         /* Garante que as imagens se ajustem sem distorção */
+    
 }
 
-#serviços {
+#servicos {
     display: flex;                 /* Usa o Flexbox para dispor as caixas em linha */
-    justify-content: space-around; /* Espaça as caixas igualmente */
+    justify-content: space-between; /* Espaça as caixas igualmente */
     gap: 10px;                     /* Espaçamento entre as caixas */
     padding: 30px;                 /* Preenchimento interno da div */
+    padding-bottom: 30px;
     flex-wrap: wrap;               /* Permite que as caixas se movam para uma nova linha se necessário */
 }
 
@@ -218,27 +220,29 @@ header {
     background-color: #fff;        /* Cor de fundo branca */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     border-radius: 8px;            /* Bordas arredondadas */
-    padding: 20px;                 /* Espaçamento interno da caixa */
-    width: 280px;                  /* Largura das caixas */
+    padding: 30px;                 /* Espaçamento interno da caixa */
+    width: 350px;                  /* Largura das caixas */
     text-align: center;            /* Centraliza o conteúdo dentro da caixa */
     transition: transform 0.3s;    /* Transição suave para efeitos de hover */
 }
 
 .caixa-serviço:hover {
-    transform: translateY(-10px);  /* Efeito de elevação ao passar o mouse */
+    transform: translateY(-5px);  /* Efeito de elevação ao passar o mouse */
 }
 
 .icone img {
     width: 60px;                   /* Tamanho do ícone */
     height: 60px;                  /* Tamanho do ícone */
     object-fit: contain;           /* Ajusta o ícone sem distorção */
-    margin-bottom: 20px;           /* Espaço entre o ícone e o título */
+    margin-bottom: 5px;           /* Espaço entre o ícone e o título */
 }
 
 .titulo-serviço {
     font-size: 20px;               /* Tamanho da fonte do título */
     font-weight: bold;             /* Título em negrito */
     margin-bottom: 10px;           /* Espaço entre o título e a descrição */
+    color: black;
+    
 }
 
 .descricao-serviço {
@@ -246,3 +250,5 @@ header {
     color: #666;                   /* Cor de texto para a descrição */
     line-height: 1.5;              /* Espaçamento entre as linhas da descrição */
 }
+
+
